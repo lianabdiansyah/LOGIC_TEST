@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cek Input Array</title>
+        
+    </head>
+    <body style="text-align: center; margin-top: 200px;">
+        
+        <input type="text" name="txt" id="txt" />
+        <button onclick="reverse();">Reverse</button>
+        <p id="root"></p>
+        
+        
+    <script>
+
+
+    document.getElementById('root').innerHTML = myArr;
+
+    function reverse()
+    {
+    let txt = document.getElementById('txt').value;
+
+    let tReverse = txt.split('').reverse().join('')
+
+    document.getElementById('root').innerHTML = tReverse;
+    
+    }
+
+        </script>
+        
+    </body>
+</html>

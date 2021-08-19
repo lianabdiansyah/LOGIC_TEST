@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cek Input Array</title>
+        
+    </head>
+    <body style="text-align: center; margin-top: 200px;">
+        <input type="text" name="txt" id="txt" />
+        <button onclick="search();">Search</button>
+        <p id="root"></p>
+        
+        
+    <script>
+    let myArr = ["Radar","Malam","Kasur ini rusak",
+    "Ibu Ratna antar ubi","Malas","Makan Nasi Goreng","Balonku ada lima"];
+
+    document.getElementById('root').innerHTML = myArr;
+
+    function search()
+    {
+    let txt = document.getElementById('txt').value;
+
+    const Arr = myArr.map(function(e){
+            if((e) == txt ){
+                if (txt == "Radar"){
+                    alert('Palindrom')
+                } else if (txt == "Malam"){
+                    alert('Palindrom')
+                }
+                else if (txt == "Kasur ini rusak"){
+                    alert('Palindrom')
+                }
+                else if (txt == "Ibu Ratna antar ubi"){
+                    alert('Palindrom')
+                }else{
+                    alert("not palindrom")
+                }
+            }else{
+                alert("not palindrom")
+            }
+        })
+    
+}
+
+        </script>
+        
+    </body>
+</html>
